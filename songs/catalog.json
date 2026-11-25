@@ -1,0 +1,1481 @@
+{
+  "songs": [
+    {
+      "id": "hot-cross-buns",
+      "title": "Hot Cross Buns",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/hot-cross-buns.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/hot-cross-buns.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/hot-cross-buns.notes",
+      "tempo": 84,
+      "hands": "right",
+      "arrangement": "C position, right hand"
+    },
+    {
+      "id": "mary-had-a-little-lamb",
+      "title": "Mary Had a Little Lamb",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/mary-had-a-little-lamb.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/mary-had-a-little-lamb.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/mary-had-a-little-lamb.notes",
+      "tempo": 92,
+      "hands": "right",
+      "arrangement": "C position, right hand"
+    },
+    {
+      "id": "au-clair-de-la-lune",
+      "title": "Au clair de la lune",
+      "composer": "Traditional (French)",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/au-clair-de-la-lune.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/au-clair-de-la-lune.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/au-clair-de-la-lune.notes",
+      "tempo": 88,
+      "hands": "left",
+      "arrangement": "C position, left hand"
+    },
+    {
+      "id": "when-the-saints",
+      "title": "When the Saints Go Marching In",
+      "composer": "Traditional (spiritual)",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/when-the-saints.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/when-the-saints.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/when-the-saints.notes",
+      "tempo": 100,
+      "hands": "left",
+      "arrangement": "C position, left hand"
+    },
+    {
+      "id": "old-macdonald",
+      "title": "Old MacDonald Had a Farm",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/old-macdonald.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/old-macdonald.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/old-macdonald.notes",
+      "tempo": 100,
+      "hands": "alternating",
+      "arrangement": "Middle-C position, hands take turns"
+    },
+    {
+      "id": "london-bridge",
+      "title": "London Bridge",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/london-bridge.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/london-bridge.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/london-bridge.notes",
+      "tempo": 96,
+      "hands": "alternating",
+      "arrangement": "Middle-C position, hands take turns"
+    },
+    {
+      "id": "yankee-doodle",
+      "title": "Yankee Doodle",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/yankee-doodle.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/yankee-doodle.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/yankee-doodle.notes",
+      "tempo": 104,
+      "hands": "alternating",
+      "arrangement": "Middle-C position, hands take turns"
+    },
+    {
+      "id": "lightly-row",
+      "title": "Lightly Row",
+      "composer": "Traditional (German)",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/lightly-row.musicxml",
+      "license": "Public domain (traditional), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/lightly-row.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/lightly-row.notes",
+      "tempo": 96,
+      "hands": "both",
+      "arrangement": "C position, both hands"
+    },
+    {
+      "id": "jingle-bells",
+      "title": "Jingle Bells",
+      "composer": "James Lord Pierpont",
+      "difficulty": "beginner",
+      "grade": 0,
+      "period": "Romantic",
+      "file": "songs/jingle-bells.musicxml",
+      "license": "Public domain (Pierpont, 1857), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/jingle-bells.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/jingle-bells.notes",
+      "tempo": 112,
+      "hands": "both",
+      "arrangement": "C position, both hands"
+    },
+    {
+      "id": "brahms-lullaby",
+      "title": "Lullaby (simplified)",
+      "composer": "Johannes Brahms",
+      "difficulty": "beginner",
+      "grade": 0,
+      "period": "Romantic",
+      "file": "songs/brahms-lullaby.musicxml",
+      "license": "Public domain (Brahms, 1868), arrangement MIT",
+      "source": "Piano Practice contributors – arrangement for beginners (songs/brahms-lullaby.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/brahms-lullaby.notes",
+      "tempo": 84,
+      "hands": "both",
+      "arrangement": "Two positions, hands share the tune"
+    },
+    {
+      "id": "twinkle-twinkle",
+      "title": "Twinkle Twinkle Little Star",
+      "composer": "Traditional",
+      "difficulty": "beginner",
+      "grade": 0,
+      "file": "songs/twinkle-twinkle.musicxml",
+      "license": "CC0-1.0",
+      "source": "Piano Practice contributors – hand transcription (songs/twinkle-twinkle.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/twinkle-twinkle.notes",
+      "tempo": 96
+    },
+    {
+      "id": "ode-to-joy",
+      "title": "Ode to Joy",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "beginner",
+      "grade": 0,
+      "period": "Classical",
+      "file": "songs/ode-to-joy.musicxml",
+      "license": "CC0-1.0",
+      "source": "Piano Practice contributors – simplified hand transcription (songs/ode-to-joy.notes)",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/ode-to-joy.notes",
+      "tempo": 100
+    },
+    {
+      "id": "minuet-in-g",
+      "title": "Minuet in G, BWV Anh. 114",
+      "composer": "Christian Petzold (attr.)",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Baroque",
+      "file": "songs/minuet-in-g.musicxml",
+      "license": "CC0-1.0",
+      "source": "Piano Practice contributors – hand transcription (songs/minuet-in-g.notes), checked against the Mutopia edition by Allen Garvin",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/minuet-in-g.notes",
+      "tempo": 108,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-minuet-anh116",
+      "title": "Minuet in G, BWV Anh. 116",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh116.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Allen Garvin (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=77",
+      "typesetter": "Allen Garvin",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-minuet-anh113",
+      "title": "Minuet in F, BWV Anh. 113",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh113.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Allen Garvin (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=74",
+      "typesetter": "Allen Garvin",
+      "tempo": 104,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "schumann-melodie",
+      "title": "Melody, Op. 68 No. 1 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Romantic",
+      "file": "songs/schumann-melodie.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=647",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 80,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "mozart-minuet-k2",
+      "title": "Minuet in F, K. 2",
+      "composer": "Wolfgang Amadeus Mozart",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Classical",
+      "file": "songs/mozart-minuet-k2.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Nicolas Morant (Breitkopf & Härtel, 1877–1910); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1770",
+      "typesetter": "Nicolas Morant",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-minuet-anh120",
+      "title": "Minuet in A minor, BWV Anh. 120",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh120.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1612",
+      "typesetter": "Steven McDougall",
+      "tempo": 104,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "bach-air-anh131",
+      "title": "Air in F, BWV Anh. 131",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Baroque",
+      "file": "songs/bach-air-anh131.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Anonymous (after the autograph); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=767",
+      "typesetter": "Anonymous",
+      "tempo": 88,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "schumann-humming-song",
+      "title": "Humming Song, Op. 68 No. 3 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 1,
+      "period": "Romantic",
+      "file": "songs/schumann-humming-song.musicxml",
+      "license": "CC BY-SA 3.0",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 3.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=651",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 92,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "bach-minuet-anh115",
+      "title": "Minuet in G minor, BWV Anh. 115",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh115.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Allen Garvin (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=76",
+      "typesetter": "Allen Garvin",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-musette-anh126",
+      "title": "Musette in D, BWV Anh. 126",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-musette-anh126.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Allen Garvin (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=79",
+      "typesetter": "Allen Garvin",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "burgmuller-candeur",
+      "title": "La Candeur (Frankness), Op. 100 No. 1",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/burgmuller-candeur.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=202",
+      "typesetter": "Bas Wassink",
+      "tempo": 100,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "schumann-soldiers-march",
+      "title": "Soldiers' March, Op. 68 No. 2 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/schumann-soldiers-march.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=650",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 104,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "schumann-poor-orphan",
+      "title": "Poor Orphan, Op. 68 No. 6 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/schumann-poor-orphan.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=687",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 66,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "schumann-wild-rider",
+      "title": "The Wild Rider, Op. 68 No. 8 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/schumann-wild-rider.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=655",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 126,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "tchaikovsky-morning-prayer",
+      "title": "Morning Prayer, Op. 39 No. 1 (Album for the Young)",
+      "composer": "Pyotr Ilyich Tchaikovsky",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/tchaikovsky-morning-prayer.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Rem Zolotykh (Schirmer, 1904); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2032",
+      "typesetter": "Rem Zolotykh",
+      "tempo": 66,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "tchaikovsky-old-french-song",
+      "title": "Old French Song, Op. 39 No. 16 (Album for the Young)",
+      "composer": "Pyotr Ilyich Tchaikovsky",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/tchaikovsky-old-french-song.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by David McNamara (Schirmer, 1904); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2080",
+      "typesetter": "David McNamara",
+      "tempo": 72,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "bach-minuet-anh121",
+      "title": "Minuet in C minor, BWV Anh. 121",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh121.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1613",
+      "typesetter": "Steven McDougall",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-minuet-anh118",
+      "title": "Minuet in B♭, BWV Anh. 118",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-minuet-anh118.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1014",
+      "typesetter": "Steven McDougall",
+      "tempo": 104,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-polonaise-anh119",
+      "title": "Polonaise in G minor, BWV Anh. 119",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-polonaise-anh119.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1016",
+      "typesetter": "Steven McDougall",
+      "tempo": 84,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-polonaise-anh128",
+      "title": "Polonaise in D minor, BWV Anh. 128",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/bach-polonaise-anh128.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1615",
+      "typesetter": "Steven McDougall",
+      "tempo": 84,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "schumann-little-piece",
+      "title": "Little Piece, Op. 68 No. 5 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/schumann-little-piece.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=653",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 92,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "schumann-chorale",
+      "title": "Chorale, Op. 68 No. 4 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/schumann-chorale.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=782",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 60,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "handel-menuet-d-minor",
+      "title": "Menuet in D minor (Aylesford Pieces)",
+      "composer": "George Frideric Handel",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/handel-menuet-d-minor.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Edition Schott, 1930); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=157",
+      "typesetter": "Bas Wassink",
+      "tempo": 100,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "handel-menuet-d",
+      "title": "Menuet in D (Aylesford Pieces)",
+      "composer": "George Frideric Handel",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Baroque",
+      "file": "songs/handel-menuet-d.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Edition Schott, 1930); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=161",
+      "typesetter": "Bas Wassink",
+      "tempo": 104,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "pleyel-minuet-c",
+      "title": "Minuet in C",
+      "composer": "Ignaz Pleyel",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Classical",
+      "file": "songs/pleyel-minuet-c.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (late 19th-century edition); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=191",
+      "typesetter": "Bas Wassink",
+      "tempo": 104,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "streabbog-valse",
+      "title": "Waltz in C (Les étoiles d'or No. 1)",
+      "composer": "Louis Streabbog",
+      "difficulty": "easy",
+      "grade": 2,
+      "period": "Romantic",
+      "file": "songs/streabbog-valse.musicxml",
+      "license": "CC BY-SA 4.0",
+      "source": "Mutopia Project – typeset by Masamichi Hosoda (G. Morosini & Co., 1882); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 4.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2092",
+      "typesetter": "Masamichi Hosoda",
+      "tempo": 138,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "burgmuller-pastorale",
+      "title": "La Pastorale, Op. 100 No. 3",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-pastorale.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=218",
+      "typesetter": "Bas Wassink",
+      "tempo": 76,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-arabesque",
+      "title": "Arabesque, Op. 100 No. 2",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-arabesque.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=203",
+      "typesetter": "Bas Wassink",
+      "tempo": 112,
+      "section": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "schumann-happy-farmer",
+      "title": "The Happy Farmer, Op. 68 No. 10 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-happy-farmer.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=659",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 100,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "schumann-first-loss",
+      "title": "First Loss, Op. 68 No. 16 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-first-loss.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=676",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 76,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "tchaikovsky-wooden-soldiers",
+      "title": "March of the Wooden Soldiers, Op. 39 No. 5 (Album for the Young)",
+      "composer": "Pyotr Ilyich Tchaikovsky",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/tchaikovsky-wooden-soldiers.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Anonymous (Schirmer, 1904); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1806",
+      "typesetter": "Anonymous",
+      "tempo": 96,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "bach-little-prelude-bwv939",
+      "title": "Little Prelude in C, BWV 939",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Baroque",
+      "file": "songs/bach-little-prelude-bwv939.musicxml",
+      "license": "CC BY-SA 3.0",
+      "source": "Mutopia Project – typeset by Hajo Dezelski (Bach-Gesellschaft, vol. 36 (Ernst Naumann, 1890)); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 3.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1593",
+      "typesetter": "Hajo Dezelski",
+      "tempo": 80,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "clementi-sonatina-op36-1",
+      "title": "Sonatina in C, Op. 36 No. 1 — 1st movement",
+      "composer": "Muzio Clementi",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Classical",
+      "file": "songs/clementi-sonatina-op36-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Brian D. Rude (Sonatina Album, G. Schirmer, 1893); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=804",
+      "typesetter": "Brian D. Rude",
+      "tempo": 108,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "bach-polonaise-anh117b",
+      "title": "Polonaise in F, BWV Anh. 117b",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Baroque",
+      "file": "songs/bach-polonaise-anh117b.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1015",
+      "typesetter": "Steven McDougall",
+      "tempo": 80,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "bach-march-anh127",
+      "title": "March in E♭, BWV Anh. 127",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Baroque",
+      "file": "songs/bach-march-anh127.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Steven McDougall (Bach-Gesellschaft, vol. 43 (1894)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1614",
+      "typesetter": "Steven McDougall",
+      "tempo": 96,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "schumann-hunting-song",
+      "title": "Hunting Song, Op. 68 No. 7 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-hunting-song.musicxml",
+      "license": "CC BY-SA 3.0",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 3.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=691",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 138,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "schumann-folk-song",
+      "title": "Folk Song, Op. 68 No. 9 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-folk-song.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=675",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 80,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "schumann-little-study",
+      "title": "Little Study, Op. 68 No. 14 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-little-study.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=786",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 120,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "schumann-reapers-song",
+      "title": "Reaper's Song, Op. 68 No. 18 (Album for the Young)",
+      "composer": "Robert Schumann",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/schumann-reapers-song.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Philippe Hézaine (Peters); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=663",
+      "typesetter": "Philippe Hézaine",
+      "tempo": 112,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "burgmuller-petite-reunion",
+      "title": "La Petite Réunion (Festive Gathering), Op. 100 No. 4",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-petite-reunion.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=219",
+      "typesetter": "Bas Wassink",
+      "tempo": 120,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-innocence",
+      "title": "Innocence, Op. 100 No. 5",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-innocence.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=214",
+      "typesetter": "Bas Wassink",
+      "tempo": 112,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "burgmuller-progres",
+      "title": "Progrès (Progress), Op. 100 No. 6",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-progres.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=215",
+      "typesetter": "Bas Wassink",
+      "tempo": 116,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-courant-limpide",
+      "title": "Le Courant limpide (The Limpid Stream), Op. 100 No. 7",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-courant-limpide.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=216",
+      "typesetter": "Bas Wassink",
+      "tempo": 100,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-gracieuse",
+      "title": "La Gracieuse (Gracefulness), Op. 100 No. 8",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-gracieuse.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=217",
+      "typesetter": "Bas Wassink",
+      "tempo": 92,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-tendre-fleur",
+      "title": "Tendre Fleur (A Dainty Flower), Op. 100 No. 10",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-tendre-fleur.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=221",
+      "typesetter": "Bas Wassink",
+      "tempo": 96,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-consolation",
+      "title": "Consolation, Op. 100 No. 13",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/burgmuller-consolation.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=224",
+      "typesetter": "Bas Wassink",
+      "tempo": 80,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "kuhlau-sonatina-op20-1-2",
+      "title": "Sonatina in C, Op. 20 No. 1 — 2nd movement",
+      "composer": "Friedrich Kuhlau",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Classical",
+      "file": "songs/kuhlau-sonatina-op20-1-2.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (B. Schott's Söhne); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=233",
+      "typesetter": "Bas Wassink",
+      "tempo": 66,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "handel-gavotte-g",
+      "title": "Gavotte in G (Aylesford Pieces)",
+      "composer": "George Frideric Handel",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Baroque",
+      "file": "songs/handel-gavotte-g.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Edition Schott, 1930); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=151",
+      "typesetter": "Bas Wassink",
+      "tempo": 100,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "wanhal-rondo-op42-1",
+      "title": "Rondo in C, Op. 42 No. 1",
+      "composer": "Johann Baptist Wanhal",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Classical",
+      "file": "songs/wanhal-rondo-op42-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (late 19th-century edition); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=192",
+      "typesetter": "Bas Wassink",
+      "tempo": 108,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "andre-sonatina-op34-1",
+      "title": "Sonatina in C, Op. 34 No. 1",
+      "composer": "Johann André",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Classical",
+      "file": "songs/andre-sonatina-op34-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (late 19th-century edition); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=207",
+      "typesetter": "Bas Wassink",
+      "tempo": 104,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "muller-siciliano",
+      "title": "Siciliano in A minor",
+      "composer": "August Eberhard Müller",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Classical",
+      "file": "songs/muller-siciliano.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (late 19th-century edition); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=208",
+      "typesetter": "Bas Wassink",
+      "tempo": 96,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "czerny-op840-1",
+      "title": "Melodious Study in C, Op. 840 No. 1",
+      "composer": "Carl Czerny",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/czerny-op840-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Manuela (Schott, Mainz [1855]); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2146",
+      "typesetter": "Manuela",
+      "tempo": 100,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "czerny-op840-2",
+      "title": "Melodious Study in F, Op. 840 No. 2",
+      "composer": "Carl Czerny",
+      "difficulty": "intermediate",
+      "grade": 3,
+      "period": "Romantic",
+      "file": "songs/czerny-op840-2.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Manuela (Schott, Mainz [1855]); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2147",
+      "typesetter": "Manuela",
+      "tempo": 96,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "bach-prelude-in-c",
+      "title": "Prelude in C, BWV 846",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Baroque",
+      "file": "songs/bach-prelude-in-c.musicxml",
+      "license": "CC0-1.0",
+      "source": "Piano Practice contributors – hand transcription (songs/bach-prelude-in-c.notes), checked against the Mutopia edition",
+      "sourceUrl": "https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/bach-prelude-in-c.notes",
+      "tempo": 60,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "fur-elise",
+      "title": "Für Elise",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Classical",
+      "file": "songs/fur-elise.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Stelios Samelis (Breitkopf & Härtel, 1888); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=931",
+      "tempo": 72,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "czerny-op821-1",
+      "title": "Eight-Measure Exercise, Op. 821 No. 1",
+      "composer": "Carl Czerny",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/czerny-op821-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Manuel Castejón Limas (Edition Peters, Leipzig [1888]); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2060",
+      "typesetter": "Manuel Castejón Limas",
+      "tempo": 92,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-ballade",
+      "title": "Ballade, Op. 100 No. 15",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/burgmuller-ballade.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=227",
+      "typesetter": "Bas Wassink",
+      "tempo": 112,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "kuhlau-sonatina-op20-1",
+      "title": "Sonatina in C, Op. 20 No. 1 — 1st movement",
+      "composer": "Friedrich Kuhlau",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Classical",
+      "file": "songs/kuhlau-sonatina-op20-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (B. Schott's Söhne); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=232",
+      "typesetter": "Bas Wassink",
+      "tempo": 112,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "chopin-prelude-op28-7",
+      "title": "Prelude in A, Op. 28 No. 7",
+      "composer": "Frédéric Chopin",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/chopin-prelude-op28-7.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Magnus Lewis-Smith (Edition Peters); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=470",
+      "typesetter": "Magnus Lewis-Smith",
+      "tempo": 69,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "grieg-albumblatt-op12-7",
+      "title": "Album Leaf, Op. 12 No. 7 (Lyric Pieces)",
+      "composer": "Edvard Grieg",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/grieg-albumblatt-op12-7.musicxml",
+      "license": "CC BY-SA 4.0",
+      "source": "Mutopia Project – typeset by Knute Snortum (G. Schirmer, 1902); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 4.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2194",
+      "typesetter": "Knute Snortum",
+      "tempo": 80,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "satie-gymnopedie-1",
+      "title": "Gymnopédie No. 1",
+      "composer": "Erik Satie",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Modern",
+      "file": "songs/satie-gymnopedie-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Evin Robertson (Dover (reprint of the original edition)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=37",
+      "typesetter": "Evin Robertson",
+      "tempo": 76,
+      "section": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "czerny-op821-2",
+      "title": "Eight-Measure Exercise, Op. 821 No. 2",
+      "composer": "Carl Czerny",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/czerny-op821-2.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Manuel Castejón Limas (Edition Peters, Leipzig [1888]); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2061",
+      "typesetter": "Manuel Castejón Limas",
+      "tempo": 92,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "burgmuller-chasse",
+      "title": "La Chasse (The Chase), Op. 100 No. 9",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/burgmuller-chasse.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=220",
+      "typesetter": "Bas Wassink",
+      "tempo": 132,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "burgmuller-bergeronnette",
+      "title": "La Bergeronnette (The Wagtail), Op. 100 No. 11",
+      "composer": "Friedrich Burgmüller",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Romantic",
+      "file": "songs/burgmuller-bergeronnette.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Bas Wassink (Collection Litolff); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=222",
+      "typesetter": "Bas Wassink",
+      "tempo": 120,
+      "section": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "beethoven-minuet-woo82",
+      "title": "Minuet in E♭, WoO 82",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Classical",
+      "file": "songs/beethoven-minuet-woo82.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Stelios Samelis (Breitkopf & Härtel (1862–1865)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=904",
+      "typesetter": "Stelios Samelis",
+      "tempo": 112,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "beethoven-sonata-op49-2-2",
+      "title": "Sonata in G, Op. 49 No. 2 — 2nd movement (Tempo di Menuetto)",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "intermediate",
+      "grade": 4,
+      "period": "Classical",
+      "file": "songs/beethoven-sonata-op49-2-2.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Stelios Samelis (Breitkopf & Härtel (1862–1865)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=777",
+      "typesetter": "Stelios Samelis",
+      "tempo": 112,
+      "section": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "moonlight-sonata-1",
+      "title": "Moonlight Sonata, 1st movement",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Classical",
+      "file": "songs/moonlight-sonata-1.musicxml",
+      "license": "CC BY-SA 2.5",
+      "source": "Mutopia Project – typeset by Stewart Holmes (Berners, 1908); converted with tools/ly2musicxml.mjs. Adaptations shared under CC BY-SA 2.5",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=276",
+      "tempo": 52,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "chopin-prelude-op28-4",
+      "title": "Prelude in E minor, Op. 28 No. 4",
+      "composer": "Frédéric Chopin",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Romantic",
+      "file": "songs/chopin-prelude-op28-4.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Magnus Lewis-Smith (Peters, 1879); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=468",
+      "typesetter": "Magnus Lewis-Smith",
+      "tempo": 56,
+      "section": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "chopin-prelude-op28-20",
+      "title": "Prelude in C minor, Op. 28 No. 20",
+      "composer": "Frédéric Chopin",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Romantic",
+      "file": "songs/chopin-prelude-op28-20.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Magnus Lewis-Smith (Edition Peters); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=472",
+      "typesetter": "Magnus Lewis-Smith",
+      "tempo": 48,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "bach-invention-1",
+      "title": "Invention No. 1 in C, BWV 772",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Baroque",
+      "file": "songs/bach-invention-1.musicxml",
+      "license": "CC BY-SA 3.0",
+      "source": "Mutopia Project – typeset by Jeff Covey (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 3.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=40",
+      "typesetter": "Jeff Covey",
+      "tempo": 66,
+      "section": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "bach-invention-8",
+      "title": "Invention No. 8 in F, BWV 779",
+      "composer": "Johann Sebastian Bach",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Baroque",
+      "file": "songs/bach-invention-8.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Allen Garvin (Bach-Gesellschaft); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=61",
+      "typesetter": "Allen Garvin",
+      "tempo": 96,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "beethoven-sonata-op49-2-1",
+      "title": "Sonata in G, Op. 49 No. 2 — 1st movement",
+      "composer": "Ludwig van Beethoven",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Classical",
+      "file": "songs/beethoven-sonata-op49-2-1.musicxml",
+      "license": "Public Domain",
+      "source": "Mutopia Project – typeset by Stelios Samelis (Breitkopf & Härtel (1862–1865)); converted with tools/ly2musicxml.mjs, repeats unfolded",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=776",
+      "typesetter": "Stelios Samelis",
+      "tempo": 120,
+      "section": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "mozart-sonata-k545-1",
+      "title": "Sonata in C, K. 545 — 1st movement",
+      "composer": "Wolfgang Amadeus Mozart",
+      "difficulty": "advanced",
+      "grade": 5,
+      "period": "Classical",
+      "file": "songs/mozart-sonata-k545-1.musicxml",
+      "license": "CC BY-SA 3.0",
+      "source": "Mutopia Project – typeset by Alejandro Sierra (after a score on IMSLP); converted with tools/ly2musicxml.mjs, repeats unfolded. Adaptations shared under CC BY-SA 3.0",
+      "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=998",
+      "typesetter": "Alejandro Sierra",
+      "tempo": 116,
+      "section": [
+        0,
+        3
+      ]
+    }
+  ]
+}

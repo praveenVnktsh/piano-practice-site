@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Piano Practice: an engraved quaver on ivory paper, brass flag. Full-bleed (maskable). -->
+  <rect width="512" height="512" fill="#f4efe4"/>
+  <g transform="translate(256 262) scale(.88) translate(-256 -262)">
+    <ellipse cx="214" cy="338" rx="66" ry="45" transform="rotate(-24 214 338)" fill="#151412"/>
+    <path d="M276 104c4 46 34 70 60 96 30 30 40 74 22 124-4 10-9 19-14 26 8-30 6-58-8-82-14-24-38-38-60-46z" fill="#a8833f"/>
+    <rect x="263" y="104" width="15" height="226" rx="2" fill="#151412"/>
+    <path d="M150 420h212" stroke="#1d1b18" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

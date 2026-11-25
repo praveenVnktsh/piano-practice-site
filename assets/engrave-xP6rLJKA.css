@@ -1,0 +1,1 @@
+svg.eg{display:block;fill:var(--ink);overflow:visible}svg.eg .eg-bracket{fill:none;stroke:var(--ink);stroke-width:1}svg.eg .eg-label{font:500 12px var(--font-ui);fill:var(--ink-soft)}svg.eg .eg-above{font:italic 13px var(--font-text);fill:var(--ink-soft)}svg.eg .eg-ev{transition:fill .16s var(--ease)}svg.eg .eg-hide{opacity:0}

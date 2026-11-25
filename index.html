@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4efe4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<title>Piano Practice</title>
+<meta name="description" content="Practise piano pieces with falling notes or sheet music, a MIDI keyboard or the on-screen keys.">
+<!-- Home-screen app (src/pwa/, public/manifest.webmanifest). Icons: public/icons, rebuilt by src/pwa/make-icons.mjs. -->
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Practice">
+<!-- "default": the status bar takes the theme colour above and keeps dark text on paper. -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Wake Lock, service worker, theme colour, relay status (src/pwa/index.js). -->
+  <script type="module" crossorigin src="./assets/index-Bu3-ThW5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D9qzPy2u.css">
+</head>
+<body>
+<div class="shell">
+
+
+<!-- ───────── Player (src/player.js owns everything inside #player) ───────── -->
+<div id="player" class="app">
+
+  <!-- ───────── Top bar: back · title · Listen | Practise + play · tempo · ⋯ ───────── -->
+  <header class="topbar">
+    <div class="tb-left">
+      <!-- The shell fills this with "← Pieces" etc. and handles the click (src/app/index.js). -->
+      <button id="player-back" type="button" aria-label="Back"></button>
+      <div class="title-block">
+        <h1 id="lesson-title">Piano Practice</h1>
+        <p class="composer" id="lesson-composer"></p>
+        <p class="sr-only" id="lesson-subtitle"></p>
+      </div>
+    </div>
+
+    <div class="tb-centre">
+      <div class="mode-seg" role="radiogroup" aria-label="Listen or practise">
+        <button id="um-listen" type="button" role="radio" aria-checked="true">Listen</button>
+        <button id="um-practice" type="button" role="radio" aria-checked="false">Practise</button>
+        <i class="mode-thumb" aria-hidden="true"></i>
+      </div>
+      <button class="play-btn" id="um-play" type="button" aria-label="Listen" title="Play / pause (Space)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+      </button>
+      <!-- Record a take (src/record/player-ui.js). -->
+      <button class="rec-btn" id="rec-btn" type="button" aria-pressed="false" aria-label="Record" title="Record a take (R)"><span class="rec-dot" aria-hidden="true"></span><span class="rec-word">Rec</span></button>
+    </div>
+
+    <div class="tb-right">
+      <div class="pop-anchor">
+        <button class="tempo-btn" id="tempo-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="tempo-pop" title="Tempo">
+          <span class="tempo-note" aria-hidden="true">♩</span><span class="tempo-eq" aria-hidden="true">=</span><span id="um-bpm">60</span>
+          <span class="tempo-target" id="um-target" title="Speed-up target" hidden></span>
+          <span class="metro-dot" aria-hidden="true"></span>
+        </button>
+        <div class="popover tempo-pop" id="tempo-pop" role="dialog" aria-label="Tempo" hidden>
+          <p class="pop-title"><span class="tempo-note">♩</span> = <output id="tempo-pop-value">60</output></p>
+          <div class="tempo-row">
+            <button class="step-btn" id="tempo-down" type="button" aria-label="Slower">−</button>
+            <input id="um-tempo" type="range" min="20" max="160" value="60" aria-label="Tempo, beats per minute">
+            <button class="step-btn" id="tempo-up" type="button" aria-label="Faster">+</button>
+          </div>
+          <p class="tempo-term" id="tempo-term">Andante</p>
+          <p class="tempo-ladder" id="tempo-ladder" hidden></p>
+          <p class="tempo-best" id="tempo-best" hidden><span id="tempo-best-text"></span> <button class="link-btn" id="tempo-try" type="button"></button></p>
+          <label class="pop-toggle"><span>Metronome <small>K</small></span><input type="checkbox" id="metro-btn"><i></i></label>
+          <label class="pop-toggle" title="+5% after each clean pass (95%+), up to the target tempo"><span>Speed up after clean passes</span><input type="checkbox" id="sec-speed"><i></i></label>
+        </div>
+      </div>
+
+      <div class="pop-anchor">
+        <button class="more-btn" id="more-btn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu" aria-label="More options" title="More">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg>
+          <span class="midi-dot" aria-hidden="true"></span>
+        </button>
+        <div class="popover more-menu" id="more-menu" role="dialog" aria-label="More options" hidden>
+          <div class="menu-group midi-chip" id="midi-chip">
+            <button class="menu-row midi-row" id="um-midi" type="button"><span class="dot" aria-hidden="true"></span><span>Connect piano</span></button>
+            <div class="midi-extra">
+              <select id="um-midi-device" aria-label="MIDI input device"><option value="all">All inputs</option></select>
+              <button class="link-btn" id="um-midi-clear" type="button" title="Release stuck keys">Release keys</button>
+            </div>
+          </div>
+          <div class="menu-group">
+            <label class="menu-row pop-toggle"><span>Metronome <small>K</small></span><input type="checkbox" id="menu-metro"><i></i></label>
+            <label class="menu-row pop-toggle"><span>Sound <small>M</small></span><input type="checkbox" id="mute-btn" checked><i></i></label>
+          </div>
+          <div class="menu-group">
+            <label class="menu-row" title="One practice strategy at a time">
+              <span>Strategy</span>
+              <select class="menu-select" id="menu-strategy" aria-label="Practice strategy">
+                <option value="off">None</option>
+                <option value="ladder">Slow-practice ladder</option>
+                <option value="dotted">Dotted rhythm</option>
+                <option value="reversed">Reversed dotted</option>
+                <option value="blocked">Blocked chords</option>
+                <option value="memory">Memory check</option>
+              </select>
+            </label>
+          </div>
+          <div class="menu-group">
+            <div class="menu-row">
+              <span>View</span>
+              <span class="fine-seg" role="radiogroup" aria-label="View">
+                <label><input type="radio" name="menu-view" value="sheet"><span>Notation</span></label>
+                <label><input type="radio" name="menu-view" value="pages"><span>Pages</span></label>
+                <label><input type="radio" name="menu-view" value="falling"><span>Falling notes</span></label>
+              </span>
+            </div>
+            <label class="menu-row pop-toggle"><span>Note names <small>N</small></span><input type="checkbox" id="names-btn"><i></i></label>
+            <label class="menu-row pop-toggle" title="Roman numerals and chord symbols under the score, worked out from the notes (approximate)"><span>Harmony <small>approximate</small></span><input type="checkbox" id="harmony-btn"><i></i></label>
+            <div class="menu-row">
+              <span>Zoom</span>
+              <span class="zoom-ctl" role="group" aria-label="Score zoom">
+                <button class="step-btn" id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out (−)">−</button>
+                <span class="zoom-level" id="zoom-level">100%</span>
+                <button class="step-btn" id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in (+)">+</button>
+              </span>
+            </div>
+            <div class="menu-row">
+              <span>Theme</span>
+              <span class="fine-seg" role="radiogroup" aria-label="Theme">
+                <label><input type="radio" name="menu-theme" value="auto"><span>Auto</span></label>
+                <label><input type="radio" name="menu-theme" value="light"><span>Paper</span></label>
+                <label><input type="radio" name="menu-theme" value="dark"><span>Hall</span></label>
+              </span>
+            </div>
+          </div>
+          <div class="menu-group" id="collect-group">
+            <button class="menu-row fav-row" id="fav-btn" type="button" aria-pressed="false"><span>Favourite</span><span class="fav-star" aria-hidden="true"></span></button>
+            <button class="menu-row" id="collect-btn" type="button" aria-haspopup="dialog" aria-expanded="false"><span>Add to a collection…</span></button>
+          </div>
+          <div class="menu-group">
+            <button class="menu-row" id="fullscreen-btn" type="button"><span>Full screen</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+            <button class="menu-row" id="rec-list-btn" type="button"><span>Recordings…</span></button>
+            <button class="menu-row" id="settings-btn" type="button"><span>Settings…</span></button>
+            <button class="menu-row" id="help-btn" type="button" aria-haspopup="dialog"><span>Help &amp; shortcuts <small>?</small></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress" id="progress" title="Click to jump"><div class="progress-fill" id="um-progress"></div></div>
+  </header>
+  <p class="sr-only" id="um-midi-status" aria-live="polite">MIDI not connected</p>
+
+  <!-- ───────── Section strip: bars · loop · hands · mode · step ───────── -->
+  <form class="section-bar" id="section-bar" aria-label="Section" autocomplete="off">
+    <div class="sb-group sb-bars">
+      <div class="pop-anchor">
+        <button class="sb-word" id="section-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="bars-pop" title="Section presets"><span id="section-btn-label">Bars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
+        <div class="popover bars-pop" id="bars-pop" role="dialog" aria-label="Section presets" hidden>
+          <p class="pop-kicker">Choose a passage</p>
+          <div class="preset-list">
+            <button type="button" data-preset="here">This bar</button>
+            <button type="button" data-preset="four">Four bars from here</button>
+            <button type="button" data-preset="prev">‹ Previous passage</button>
+            <button type="button" data-preset="next">Next passage ›</button>
+            <button type="button" data-preset="whole">The whole piece</button>
+          </div>
+          <p class="pop-kicker">Practise smarter</p>
+          <div class="preset-list smart-list">
+            <!-- "Learn this piece" plan (src/learn/guide.js) -->
+            <button type="button" id="learn-toggle" hidden>Learn this piece, step by step<span class="preset-meta"></span></button>
+            <button type="button" data-smart="weak" id="smart-weak">Practise my weak bars<span class="preset-meta" id="smart-weak-meta"></span></button>
+            <button type="button" data-smart="phrase">This phrase<span class="preset-meta" id="smart-phrase-meta"></span></button>
+            <button type="button" data-smart="next-phrase" id="smart-next">Next phrase ›<span class="preset-meta" id="smart-next-meta"></span></button>
+            <button type="button" data-smart="chain-forward" title="Loop the first bar, then add a bar after each clean pass">Chain from the start<span class="preset-meta">+1 bar per clean pass</span></button>
+            <button type="button" data-smart="chain-backward" title="Loop the last bar, then add the bar before it after each clean pass">Chain from the end<span class="preset-meta">backward</span></button>
+          </div>
+          <p class="pop-kicker">Perform</p>
+          <div class="preset-list">
+            <button type="button" id="perform-run" title="The whole piece once, in time, without stopping; scored and recorded">Performance run<span class="preset-meta">the whole piece, once</span></button>
+          </div>
+          <p class="pop-note">Or drag across the bar numbers above the score.</p>
+        </div>
+      </div>
+      <input class="sb-num" id="sec-first" type="text" inputmode="numeric" enterkeyhint="done" aria-label="First bar" spellcheck="false">
+      <span class="sb-dash">–</span>
+      <input class="sb-num" id="sec-last" type="text" inputmode="numeric" enterkeyhint="done" aria-label="Last bar" spellcheck="false">
+      <span class="sb-of" id="sec-of"></span>
+    </div>
+    <span class="sb-sep" aria-hidden="true"></span>
+    <label class="sb-toggle sb-loop" title="Loop the section (L)"><input type="checkbox" id="sec-loop"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3l3 3-3 3M4 12v-1a5 5 0 0 1 5-5h11M7 21l-3-3 3-3M20 12v1a5 5 0 0 1-5 5H4"/></svg>Loop</span></label>
+    <span class="sb-sep" aria-hidden="true"></span>
+    <div class="sb-seg sb-hands" role="radiogroup" aria-label="Hands" title="Practise one hand; the app plays the other (H)">
+      <label><input type="radio" name="sec-hands" value="left"><span>L</span></label>
+      <label><input type="radio" name="sec-hands" value="both" checked><span>Both</span></label>
+      <label><input type="radio" name="sec-hands" value="right"><span>R</span></label>
+    </div>
+    <span class="sb-sep" aria-hidden="true"></span>
+    <div class="sb-seg sb-mode" role="radiogroup" aria-label="Practice mode">
+      <label title="Wait for me: the music waits until you play the right notes"><input type="radio" name="sec-mode" value="wait" checked><span>Wait</span></label>
+      <label title="Play along: the music keeps time; play each note on the beat"><input type="radio" name="sec-mode" value="timed"><span>Play along</span></label>
+    </div>
+    <span class="sb-sep sb-sep-nav" aria-hidden="true"></span>
+    <div class="sb-nav" role="group" aria-label="Move through the section">
+      <button class="nav-btn" id="um-stop" type="button" aria-label="Back to start of section" title="Back to start"><svg viewBox="0 0 24 24"><path d="M6 6v12M18 6l-8 6 8 6"/></svg></button>
+      <button class="nav-btn" id="um-prev-measure" type="button" aria-label="Previous bar" title="Previous bar (Shift+←)"><svg viewBox="0 0 24 24"><path d="m12 6-6 6 6 6M18 6l-6 6 6 6"/></svg></button>
+      <button class="nav-btn nav-note" id="um-prev" type="button" aria-label="Previous note" title="Previous note (←)"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button>
+      <button class="nav-btn nav-note" id="um-next" type="button" aria-label="Next note" title="Next note (→)"><svg viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></svg></button>
+      <button class="nav-btn" id="um-next-measure" type="button" aria-label="Next bar" title="Next bar (Shift+→)"><svg viewBox="0 0 24 24"><path d="m6 6 6 6-6 6M12 6l6 6-6 6"/></svg></button>
+    </div>
+    <!-- Quick passages: every Bars ▾ option one tap away (src/app/quick-bars.js). -->
+    <div class="quick-bars" id="quick-bars" role="toolbar" aria-label="Quick passages">
+      <button type="button" data-for='[data-preset="here"]'>This bar</button>
+      <button type="button" data-for='[data-preset="four"]'>4 bars</button>
+      <button type="button" data-for='[data-preset="prev"]' aria-label="Previous passage">‹ Passage</button>
+      <button type="button" data-for='[data-preset="next"]' aria-label="Next passage">Passage ›</button>
+      <button type="button" data-for='[data-smart="phrase"]'>Phrase</button>
+      <button type="button" data-for='[data-smart="next-phrase"]' aria-label="Next phrase">Phrase ›</button>
+      <button type="button" data-for='[data-preset="whole"]'>Whole piece</button>
+      <span class="qb-sep" aria-hidden="true"></span>
+      <button type="button" data-for="#smart-weak">Weak bars</button>
+      <button type="button" data-for='[data-smart="chain-forward"]' title="Loop the first bar, then add a bar after each clean pass">Chain →</button>
+      <button type="button" data-for='[data-smart="chain-backward"]' title="Loop the last bar, then add the bar before it after each clean pass">← Chain</button>
+      <button type="button" data-for="#learn-toggle">Step by step</button>
+      <span class="qb-sep" aria-hidden="true"></span>
+      <button type="button" data-for="#perform-run" title="The whole piece once, in time, without stopping; scored and recorded">Perform</button>
+    </div>
+  </form>
+
+  <!-- ───────── Stage ───────── -->
+  <main id="built-in-panel" class="stage">
+    <div class="view">
+      <section id="um-score" class="sheet-view" aria-label="Score">
+        <div class="sheet-card">
+          <div class="sheet-head">
+            <span class="measure-pill" id="um-measure"></span>
+            <span class="sheet-detail" id="um-detail"></span>
+            <span class="harmony-tag" id="um-harmony" hidden></span>
+            <span class="page-num" id="um-page"></span>
+          </div>
+          <div id="um-sheet" class="sheet"></div>
+          <div class="beats" id="um-count"></div>
+        </div>
+      </section>
+      <section class="highway" aria-hidden="true">
+        <canvas id="um-highway"></canvas>
+        <div class="sel-ruler sel-ruler-y" title="Drag along the bar numbers to loop them"></div>
+      </section>
+      <div class="loader"><div class="spinner"></div><p>Opening the score…</p></div>
+      <p class="memory-note" aria-hidden="true">Playing from memory</p>
+      <button class="strategy-tag" id="um-strategy" type="button" title="Turn off" hidden></button>
+      <div class="rec-strip" id="rec-strip" role="status" aria-live="polite" hidden></div>
+    </div>
+    <div class="cue">
+      <div class="prompt" id="um-practice-status" role="status">Opening the score…</div>
+      <!-- The plan's one quiet affordance (src/learn/guide.js) -->
+      <button class="learn-next" id="learn-next" type="button" hidden><span class="learn-step">Next step</span><span class="learn-what"></span><span class="learn-arrow" aria-hidden="true">›</span></button>
+      <div class="feedback" id="um-feedback" aria-live="polite"></div>
+    </div>
+    <div class="hud">
+      <span id="um-status"></span>
+      <span id="um-midi-notes">Tap the keys or connect a piano</span>
+    </div>
+  </main>
+
+  <!-- ───────── Keyboard ───────── -->
+  <footer class="keybed">
+    <div id="um-keys" role="group" aria-label="Piano keyboard"></div>
+  </footer>
+  <p class="sr-only" id="um-midi-last" aria-live="polite"></p>
+
+  <!-- ───────── Settings ───────── -->
+  <div class="modal" id="settings" hidden>
+    <div class="modal-card settings-card" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="settings-head">
+        <h2 id="settings-title">Settings</h2>
+        <button class="close-btn" id="settings-close" type="button" aria-label="Close settings">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <section class="set-group">
+        <h3 class="set-heading">The stage</h3>
+        <div class="choice-grid" role="radiogroup" aria-label="View">
+          <label class="choice">
+            <input type="radio" name="view" value="sheet">
+            <span class="choice-art sheet-art"><i></i><i></i><i></i><i></i><i></i><em></em><em></em><em></em><b></b></span>
+            <span class="choice-name">Notation</span>
+            <span class="choice-sub">Read the score as engraved</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="view" value="falling">
+            <span class="choice-art falling-art"><i></i><i></i><i></i><i></i><b></b></span>
+            <span class="choice-name">Falling notes</span>
+            <span class="choice-sub">Notes descend onto the keys</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="view" value="pages">
+            <span class="choice-art pages-art"><i></i><i></i><i></i><i></i><i></i><em></em><em></em><b></b></span>
+            <span class="choice-name">Pages</span>
+            <span class="choice-sub">A page at a time, turned for you</span>
+          </label>
+        </div>
+        <div class="set-row">
+          <span>Playhead</span>
+          <span class="fine-seg" role="radiogroup" aria-label="Score playhead">
+            <label><input type="radio" name="playhead" value="center"><span>Centre</span></label>
+            <label><input type="radio" name="playhead" value="left"><span>Left · read ahead</span></label>
+          </span>
+        </div>
+        <label class="set-row pop-toggle"><span>Note names inside the notes <small>N</small></span><input type="checkbox" id="set-names"><i></i></label>
+        <label class="set-row pop-toggle"><span>Larger notes <small>bigger noteheads, easier to read</small></span><input type="checkbox" id="set-large"><i></i></label>
+        <label class="set-row pop-toggle" title="Where the score prints no fingering, a suggestion is shown in small grey italics. Printed fingering always comes first."><span>Fingering numbers <small>printed, or <em class="sfing-key">suggested</em> where there are none</small></span><input type="checkbox" id="set-fing" checked><i></i></label>
+        <label class="set-row pop-toggle"><span>Colour notes by hand <small class="hand-key"><b class="rh">right</b> · <b class="lh">left</b></small></span><input type="checkbox" id="set-hands"><i></i></label>
+      </section>
+
+      <section class="set-group">
+        <h3 class="set-heading">The keyboard</h3>
+        <div class="set-row">
+          <span>Key names</span>
+          <span class="fine-seg" role="radiogroup" aria-label="Key names">
+            <label><input type="radio" name="labels" value="none"><span>None</span></label>
+            <label><input type="radio" name="labels" value="c"><span>C only</span></label>
+            <label><input type="radio" name="labels" value="all"><span>All</span></label>
+          </span>
+        </div>
+      </section>
+
+      <section class="set-group">
+        <h3 class="set-heading">Practice &amp; sound</h3>
+        <label class="set-row pop-toggle"><span>Loop the selected section <small>L</small></span><input type="checkbox" id="set-loop"><i></i></label>
+        <label class="set-row pop-toggle"><span>Sustain pedal when listening</span><input type="checkbox" id="set-pedal"><i></i></label>
+        <label class="set-row pop-toggle"><span>Metronome in Listen and Play along <small>K</small></span><input type="checkbox" id="set-metro"><i></i></label>
+        <label class="set-row pop-toggle"><span>Also click in Wait mode</span><input type="checkbox" id="set-metro-wait"><i></i></label>
+        <label class="set-row range-row"><span>Click volume</span><input type="range" id="set-metro-vol" min="0" max="100" value="60" aria-label="Metronome volume"></label>
+        <div class="set-row">
+          <span>Input latency <small id="lat-value">0 ms</small></span>
+          <button class="link-btn" id="lat-calibrate" type="button">Calibrate…</button>
+        </div>
+        <div class="set-row">
+          <span>Control key on your piano <small id="ctl-note">starts practising, restarts the pass, accepts a loop offer</small></span>
+          <span class="ctl-pick"><span id="ctl-key">C8</span> · <button class="link-btn" id="ctl-change" type="button">Change…</button></span>
+        </div>
+        <div class="lat-panel" id="lat-panel" hidden>
+          <p class="lat-text" id="lat-text">Tap a key (or the pad) with each click.</p>
+          <div class="lat-row">
+            <button class="lat-pad" id="lat-pad" type="button">Tap</button>
+            <div class="lat-dots" id="lat-dots" aria-hidden="true"></div>
+          </div>
+          <div class="lat-actions"><button class="link-btn" id="lat-again" type="button">Again</button><button class="link-btn" id="lat-reset" type="button">Reset to 0</button><button class="link-btn" id="lat-done" type="button">Done</button></div>
+        </div>
+      </section>
+
+      <p class="shortcuts"><span class="label-caps">Shortcuts</span> Space play/pause · P practise · R record · L loop · H hands · K metronome · M sound · N note names · +/− zoom · ←/→ note · Shift+←/→ bar · Pages view: ←/→ or PageUp/PageDown (page-turner pedals) turn the page</p>
+    </div>
+  </div>
+
+  <!-- ───────── Results: a programme note ───────── -->
+  <div class="modal" id="um-complete" hidden>
+    <div class="modal-card note-card" role="dialog" aria-modal="true" aria-labelledby="complete-title">
+      <p class="note-kicker" id="um-complete-kicker"></p>
+      <div class="note-figure"><span id="um-acc">100</span><span class="note-pct">%</span></div>
+      <p class="note-figure-cap">accuracy</p>
+      <h2 id="complete-title">Well played.</h2>
+      <p class="note-text" id="um-complete-text"></p>
+      <table class="timing-table" id="um-complete-timing" hidden></table>
+      <table class="timing-table perf-table" id="um-perf" hidden></table>
+      <figure class="touch" id="um-touch" hidden>
+        <div class="touch-head"><span class="touch-label">Evenness</span><span class="touch-score" id="um-even-score"></span></div>
+        <svg class="touch-graph" id="um-even-graph" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <figcaption class="touch-cap"><i class="k-time"></i>timing <i class="k-vel"></i>loudness <span id="um-even-detail"></span></figcaption>
+      </figure>
+      <figure class="touch music" id="um-music" aria-label="Musicality" hidden></figure>
+      <ul class="note-remarks" id="um-remarks" hidden></ul>
+      <div class="modal-actions">
+        <button class="primary-btn" id="um-complete-setlist" type="button" hidden>Next in setlist →</button>
+        <button class="primary-btn" id="um-complete-another" type="button" hidden>Another one ↻</button>
+        <button class="primary-btn" id="um-again" type="button">Again</button>
+        <button class="quiet-btn" id="um-complete-next" type="button">Next section</button>
+        <button class="quiet-btn" id="um-complete-close" type="button">Done</button>
+      </div>
+    </div>
+  </div>
+  <!-- ───────── Recordings: takes and their report (src/record/review.js) ───────── -->
+  <div class="rec-review" id="rec-review" hidden></div>
+</div><!-- /#player -->
+</div><!-- /.shell -->
+
+<!-- ───────── Import dialog (src/app/import-dialog.js) ───────── -->
+<dialog id="import-dialog" class="dlg" aria-labelledby="import-title">
+  <div class="dlg-card">
+    <div class="dlg-head">
+      <h2 id="import-title">Import a score</h2>
+      <button class="icon-btn" id="import-close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <label class="dropzone" id="import-drop">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg>
+      <strong>Drop a score here</strong>
+      <span class="dz-sub">MusicXML (.musicxml, .xml, .mxl), MEI (.mei) or MIDI (.mid)</span>
+      <span class="dz-btn">Choose a file</span>
+      <input type="file" id="import-file" accept=".musicxml,.xml,.mxl,.mei,.mid,.midi,application/vnd.recordare.musicxml+xml,application/vnd.recordare.musicxml,audio/midi,audio/x-midi">
+    </label>
+    <p class="dlg-status" id="import-status" role="status" aria-live="polite"></p>
+    <details class="dlg-omr dlg-guide" id="import-guide">
+      <summary>How to export from MuseScore</summary>
+      <ol>
+        <li>Open the score in MuseScore. If it has other instruments, keep only the piano: <i>File → Parts</i>, or delete the other staves.</li>
+        <li>Check the piano is <b>one part with two staves</b> (treble and bass). Two separate “right hand” / “left hand” parts are joined on import.</li>
+        <li><i>File → Export…</i>, choose <b>Compressed MusicXML (*.mxl)</b>, and drop the file here.</li>
+      </ol>
+      <p>Repeats, first and second endings and pickup bars are written out on import. More in the <a href="https://github.com/praveenVnktsh/una-mattina-practice/blob/main/songs/README.md#importing-from-musescore" target="_blank" rel="noopener">import guide</a>.</p>
+    </details>    <details class="dlg-omr">
+      <summary>Recognize a PDF (needs the local helper)</summary>
+      <p>PDF scores can be converted to notes on this computer with <a href="https://github.com/Audiveris/audiveris" target="_blank" rel="noopener">Audiveris</a>, running as a local helper at <code>127.0.0.1:8937</code>. Recognition takes minutes and makes mistakes — check the notes against the original.</p>
+      <label class="dlg-btn">
+        <input type="file" id="import-pdf" accept=".pdf,application/pdf">
+        <span>Choose a PDF</span>
+      </label>
+    </details>
+    <p class="dlg-foot">Imported scores are stored only in this browser. Find free scores at <a href="https://www.mutopiaproject.org" target="_blank" rel="noopener">Mutopia</a> or <a href="https://musescore.com" target="_blank" rel="noopener">MuseScore</a> (export as MusicXML).</p>
+  </div>
+</dialog>
+</body>
+</html>
